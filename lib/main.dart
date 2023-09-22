@@ -401,7 +401,7 @@ class Page3 extends StatelessWidget {
                   Container(
                     width: width*0.3,
                     height: height*0.5,
-<<<<<<< HEAD
+
                     child:Column(
                       children: [
                         const Padding(
@@ -416,14 +416,13 @@ class Page3 extends StatelessWidget {
 
                   ),
 
-                  Container(
-                    width: width*0.3,
-                    height: height*0.5,
-=======
->>>>>>> github1/main
-                    // color: Colors.green,
-
-                  ),
+                  // Container(
+                  //   width: width*0.3,
+                  //   height: height*0.5,
+                  //
+                  //   // color: Colors.green,
+                  //
+                  // ),
 
                 ],
               ),
