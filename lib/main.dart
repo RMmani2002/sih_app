@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -355,12 +356,297 @@ Widget _tabSection(BuildContext context) {
         ),
         Container(
           height: MediaQuery.of(context).size.height,
+          width: width*0.9,
           child: TabBarView(children: [
             Container(
-              child: Column(children: [
+              width: width*0.9,
+              height: height*0.4,
+              //color: Colors.red,
+              child:  Container(
+                child:
+              ListView(
+                children: [
+                  SizedBox(height: height*0.01,),
 
-              ],),
+
+
+                    Container(
+                      width: width*0.5,
+                      height: height*0.3,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child:
+
+                    Column(
+                      children: [
+
+                        Container(
+                          width: width*0.9,
+                          height: height*0.1,
+                          //color: Colors.white,
+                          child:
+                          Row(
+                              children:[
+                              Container(
+                              width: width*0.22,
+                              height: height*0.03,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              child:
+                                  Center(child: Text('TN02BT1234'),),
+
+                              ),
+                                SizedBox(
+                                  width: width*0.45,
+                                ),
+
+                                Container(
+                                  width: width*0.2,
+                                  height: height*0.025,
+                                  decoration: BoxDecoration(
+                                    color: Colors.yellow,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child:
+                                  Center(child:
+                                  Text('IN TRANSIT'),),
+                                ),
+
+
+
+                              ])
+
+                        ),
+                        SizedBox(height: height*0.01,),
+
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                        child:
+                        LinearPercentIndicator(
+                          animation: true,
+                          animationDuration: 2000,
+                          width: width*0.8,
+                          lineHeight: 14.0,
+                          percent: 0.5,
+                       //   linearStrokeCap:LinearS
+                          //LinearStrokeCap.butt,
+                          center: Text("50.0%"),
+                          backgroundColor: Colors.white,
+                          progressColor: Colors.green,
+                        ),
+                      ),
+
+
+
+
+                      ],
+                    ),
+                    ),
+
+
+
+
+                  SizedBox(height: height*0.01,),
+
+
+
+                  Container(
+                    width: width*0.5,
+                    height: height*0.35,
+                    decoration: BoxDecoration(
+                      color: Colors.red[400],
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child:
+
+                    Column(
+                      children: [
+
+                        Container(
+                            width: width*0.9,
+                            height: height*0.1,
+                            //color: Colors.white,
+                            child:
+                            Row(
+                                children:[
+                                  Container(
+                                    width: width*0.22,
+                                    height: height*0.03,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child:
+                                    Center(child: Text('TN02BT1234'),),
+
+                                  ),
+                                  SizedBox(
+                                    width: width*0.45,
+                                  ),
+
+                                  Container(
+                                    width: width*0.23,
+                                    height: height*0.025,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red[100],
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child:
+                                    Center(child:
+                                    Text('EMERGENCY'),),
+                                  ),
+
+
+
+                                ])
+
+                        ),
+                        SizedBox(height: height*0.01,),
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                          child:
+                          LinearPercentIndicator(
+                            animation: true,
+                            animationDuration: 2000,
+                            width: width*0.8,
+                            lineHeight: 14.0,
+                            percent: 0.3,
+                            //   linearStrokeCap:LinearS
+                            //LinearStrokeCap.butt,
+                            center: Text("30.0%"),
+                            backgroundColor: Colors.white,
+                            progressColor: Colors.green,
+                          ),
+                        ),
+
+
+
+
+                      ],
+                    ),
+                  ),
+
+
+
+                  SizedBox(height: height*0.01,),
+
+
+
+                  Container(
+                    width: width*0.5,
+                    height: height*0.35,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child:
+
+                    Column(
+                      children: [
+
+                        Container(
+                            width: width*0.9,
+                            height: height*0.1,
+                            //color: Colors.white,
+                            child:
+                            Row(
+                                children:[
+                                  Container(
+                                    width: width*0.22,
+                                    height: height*0.03,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child:
+                                    Center(child: Text('TN02BT1234'),),
+
+                                  ),
+                                  SizedBox(
+                                    width: width*0.45,
+                                  ),
+
+                                  Container(
+                                    width: width*0.2,
+                                    height: height*0.025,
+                                    decoration: BoxDecoration(
+                                      color: Colors.yellow,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child:
+                                    Center(child:
+                                    Text('IN TRANSIT'),),
+                                  ),
+
+
+
+                                ])
+
+                        ),
+                        SizedBox(height: height*0.01,),
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                          child:
+                          LinearPercentIndicator(
+                            animation: true,
+                            animationDuration: 2000,
+                            width: width*0.8,
+                            lineHeight: 14.0,
+                            percent: 1,
+                            //   linearStrokeCap:LinearS
+                            //LinearStrokeCap.butt,
+                            center: Text("100.0%"),
+                            backgroundColor: Colors.white,
+                            progressColor: Colors.green,
+                          ),
+                        ),
+
+
+
+
+                      ],
+                    ),
+                  ),
+
+
+                    // color: Colors.red,
+
+                //  ),
+
+                  // Container(
+                  //   width: width*0.3,
+                  //   height: height*0.35,
+                  //
+                  //   child:Column(
+                  //     // children: [
+                  //     //   const Padding(
+                  //     //     padding: EdgeInsets.fromLTRB(0, 0, 250, 0),
+                  //     //     child:
+                  //     //     Text('Coal types',style: TextStyle( fontWeight: FontWeight.bold,fontSize: 20),),
+                  //     //   ),
+                  //     //   Image.asset('lib/images/Group 7.png',),
+                  //     // ],
+                  //   ),
+                  //   // color: Colors.red,
+                  //
+                  // ),
+
+
+
+                ],
+              ),
+
+              ),
             ),
+            ///1st tab end
+
+
             Container(
               child: Text("Articles Body"),
             ),
